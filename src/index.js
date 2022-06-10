@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = configureStore({reducer: rootReducers})
 
 root.render(
-  <HashRouter>
+  <BrowserRouter>
     <React.StrictMode>
     <Suspense fallback={<h1>loading...</h1>}>
     <Provider store={store}>
@@ -24,5 +24,5 @@ root.render(
     </Provider>,
     </Suspense>
     </React.StrictMode>
-  </HashRouter>
+  </BrowserRouter>
 );

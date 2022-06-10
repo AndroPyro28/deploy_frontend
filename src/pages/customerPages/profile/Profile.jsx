@@ -33,7 +33,7 @@ function Profile() {
     try {
       setAllowChanges(false);
 
-      const res = await axios.post(`/api/customer/updateInfo`, {user, profileImg}, {
+      const res = await axios.post(`https://topnotch-backend.herokuapp.com/api/customer/updateInfo`, {user, profileImg}, {
         headers: {
           userinfo: Cookies.get("userToken"),
         },

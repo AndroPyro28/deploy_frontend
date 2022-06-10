@@ -33,7 +33,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://topnotch-backend.herokuapp.com",
   "eslintConfig": {
     "extends": [
       "react-app",

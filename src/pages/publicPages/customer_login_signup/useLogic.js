@@ -9,7 +9,7 @@ function useLogic({ toast }) {
 
   const onSubmitLogin = async (values) => {
     try {
-      const res = await axios.post("/api/customer/login", values);
+      const res = await axios.post("https://topnotch-backend.herokuapp.com/api/customer/login", values);
       const { success, msg } = res.data;
 
       if (!success) return toast(msg, { type: "error" });
@@ -53,7 +53,7 @@ function useLogic({ toast }) {
 
   const onSubmitSignup = async (values) => {
     try {
-      const res = await axios.post(`/api/customer/signup`, values);
+      const res = await axios.post(`https://topnotch-backend.herokuapp.com/api/customer/signup`, values);
 
       const { msg, success } = res.data;
 

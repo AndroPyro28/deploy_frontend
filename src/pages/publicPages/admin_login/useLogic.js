@@ -12,7 +12,7 @@ function useLogic({ toast }) {
     try {
       const { email, password } = values;
 
-      const res = await axios.post("/api/admin/login", values);
+      const res = await axios.post("https://topnotch-backend.herokuapp.com/api/admin/login", values);
 
       const { success, msg } = res.data;
 

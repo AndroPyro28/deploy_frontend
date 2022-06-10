@@ -54,7 +54,7 @@ function App() {
       (async function () {
         try {
           setLoading(true);
-          const res = await axios.get(`/api/auth`, {
+          const res = await axios.get(`https://topnotch-backend.herokuapp.com/api/auth`, {
             headers: {
               userinfo: Cookies.get("userToken"),
             },

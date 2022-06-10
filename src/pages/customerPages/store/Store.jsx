@@ -35,7 +35,7 @@ function Store() {
 
   useEffect(() => {
     (async () => {
-      const res = await axios.get("/api/products/getAllItems", {
+      const res = await axios.get("https://topnotch-backend.herokuapp.com/api/products/getAllItems", {
         headers: {
           userinfo: Cookies.get("userToken"),
         },

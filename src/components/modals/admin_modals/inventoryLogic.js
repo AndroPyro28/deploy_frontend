@@ -9,7 +9,7 @@ function inventoryLogic({ toast, img, imgError, setOpenItem, setImgError, setPro
       return setImgError("Please set an image to this product");
     }
     values.productImg = img;
-    const res = await axios.post("/api/products/addItem", values, {
+    const res = await axios.post("https://topnotch-backend.herokuapp.com/api/products/addItem", values, {
       headers: {
         userinfo: Cookies.get("userToken"),
       },

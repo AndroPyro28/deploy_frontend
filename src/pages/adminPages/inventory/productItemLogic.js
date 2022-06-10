@@ -4,7 +4,7 @@ function productItemLogic({ setProducts, item, setItem, imageDisplay, toast, set
 
   const deleteProduct = async (id) => {
     try {
-      const res = await axios.delete(`/api/products/deleteProduct/${id}`, {
+      const res = await axios.delete(`https://topnotch-backend.herokuapp.com/api/products/deleteProduct/${id}`, {
         headers: {
           userinfo: Cookies.get("userToken"),
         },
@@ -31,7 +31,7 @@ function productItemLogic({ setProducts, item, setItem, imageDisplay, toast, set
     try {
       //to becontinue here
       const res = await axios.post(
-        `/api/products/updateItem`,
+        `https://topnotch-backend.herokuapp.com/api/products/updateItem`,
         { item, imageDisplay },
         {
           headers: {

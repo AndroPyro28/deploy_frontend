@@ -61,9 +61,10 @@ function App() {
           });
 
           const { success, msg } = res.data;
-          alert(msg);
+          
           if (!success || msg?.includes("session expired")) {
             Cookies.remove("userToken");
+            alert(msg);
             dispatch(authenticationFailed());
           }
 

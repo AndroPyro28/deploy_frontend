@@ -54,7 +54,7 @@ function InventoryRightPage({ searchItem, setSearchItem }) {
 
   const dropDownAgeGap = [
     {
-      key: "Select age limit",
+      key: "Select age",
       value: "",
     },
     {
@@ -70,7 +70,7 @@ function InventoryRightPage({ searchItem, setSearchItem }) {
       value: "5-7",
     },
     {
-      key: "Above 7+ (yrs old)",
+      key: "7+ (yrs old)",
       value: "7+",
     },
   ];
@@ -92,13 +92,14 @@ function InventoryRightPage({ searchItem, setSearchItem }) {
       <ToastContainer autoClose={1500} />
       <FilterItemsContainer>
         <FilterContainer>
-          <span>Category</span>
+          <span>Pet</span>
           <select
             name="petCategory"
             id=""
             value={setSearchItem.petCategory}
             onChange={setProps}
           >
+            <option value="">Select Category</option>
             <option value="Dog">Dog</option>
             <option value="Cat">Cat</option>
           </select>
@@ -118,8 +119,9 @@ function InventoryRightPage({ searchItem, setSearchItem }) {
         </FilterContainer>
 
         <FilterContainer>
-          <span>Item Category</span>
+          <span>Item</span>
           <select name="itemCategory" id="" onChange={setProps}>
+            <option value="">Select category</option>
             <option value="Food">Food</option>
             <option value="Toy">Toy</option>
             <option value="Hygiene">Hygiene kit</option>

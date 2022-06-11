@@ -59,19 +59,19 @@ function InventoryRightPage({ searchItem, setSearchItem }) {
     },
     {
       key: "1-2 (yrs old)",
-      value: "1-2 (yrs old)",
+      value: "1-2",
     },
     {
       key: "2-4 (yrs old)",
-      value: "2-4 (yrs old)",
+      value: "2-4",
     },
     {
       key: "5-7 (yrs old)",
-      value: "5-7 (yrs old)",
+      value: "5-7",
     },
     {
       key: "Above 7+ (yrs old)",
-      value: "Above 7+ (yrs old)",
+      value: "7+",
     },
   ];
 

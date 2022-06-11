@@ -181,7 +181,6 @@ function Product({ product, setProducts, toast }) {
                 &nbsp; Age Limit
               </label>
               <select
-                type="text"
                 value={item?.product_age_limit}
                 name="product_age_limit"
                 onChange={setProps}
